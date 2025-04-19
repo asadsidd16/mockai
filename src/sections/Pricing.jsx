@@ -109,15 +109,21 @@ const Pricing = () => {
                     >
                       ${" "}
                       <CountUp
-                        start={plan.priceMonthly}
-                        end={monthly ? plan.priceMonthly : plan.priceYearly}
+                        start={plan.billingOptions.monthly.price}
+                        end={
+                          monthly
+                            ? plan.billingOptions.monthly.price
+                            : plan.billingOptions.yearly.price
+                        }
                         duration={0.4}
                         useEasing={false}
                         preserveValue
                       />
                     </div>
                     <div className="small-1 relative top-3 ml-1 uppercase">
-                      / mo
+                      {monthly
+                        ? plan.billingOptions.monthly.note
+                        : plan.billingOptions.yearly.note}
                     </div>
                   </div>
                 </div>

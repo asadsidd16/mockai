@@ -2,23 +2,23 @@ export const features = [
   {
     id: "0",
     icon: "/images/feature-1.png",
-    caption: "Easy integration",
-    title: "Work smarter not harder",
-    text: "With Xora, tedious tasks are history. Automation and smart processes bring your productivity to new heights. It's like having an extra cup of coffee, but without the jitters.",
+    caption: "Practice Anytime",
+    title: "Your Personal AI Interviewer",
+    text: "Simulate real interview scenarios whenever you want. Get tailored questions and constructive feedback designed to help you improve faster and build lasting confidence.",
     button: {
       icon: "/images/magictouch.svg",
-      title: "Watch the demo",
+      title: "Watch a Demo",
     },
   },
   {
     id: "1",
     icon: "/images/feature-2.png",
-    caption: "Secure & trustworthy",
-    title: "Sleep easy, we got your back",
-    text: "Your data security is our priority. With state-of-the-art encryption and robust privacy controls, Xora helps keeps your information secure and locked up tighter than Fort Knox.",
+    caption: "Real Feedback",
+    title: "Actionable Insights, Instantly",
+    text: "After every answer, receive detailed feedback on structure, clarity, and impact. Identify strengths and improvement areas — no guesswork, no fluff, just results.",
     button: {
       icon: "/images/docs.svg",
-      title: "Read the docs",
+      title: "Learn More",
     },
   },
 ];
@@ -27,85 +27,91 @@ export const details = [
   {
     id: "0",
     icon: "/images/detail-1.png",
-    title: "AI automated video editing",
+    title: "Role-Specific Question Sets",
   },
   {
     id: "1",
     icon: "/images/detail-2.png",
-    title: "Collaborate with your team",
+    title: "Instant AI Feedback on Answers",
   },
   {
     id: "2",
     icon: "/images/detail-3.png",
-    title: "Ultra fast cloud-engine",
+    title: "Practice Anytime, Anywhere",
   },
   {
     id: "3",
     icon: "/images/detail-4.png",
-    title: "24 / 7 Customer support",
+    title: "Live 1-on-1 Coaching Sessions",
   },
 ];
 
 export const faq = [
   {
     id: "0",
-    question: "How easy is it to setup Xora?",
+    question: "How easy is it to get started?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Very easy! You can book your first mock interview in just a few clicks. Choose a time, answer a few quick prep questions, and you're ready to go!",
   },
   {
     id: "1",
-    question: "Can I integrate Xora with other platforms?",
+    question: "Can I choose between AI and live coaching?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! Right now, we offer 1-on-1 coaching sessions with a real coach. Our AI-powered mock interviews are coming soon!",
   },
   {
     id: "2",
-    question: "How often do you add new content?",
+    question: "How do live mock interviews work?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Once you book a session, you'll meet with a coach over video call. We'll run through realistic interview questions and give you actionable feedback right after.",
   },
   {
     id: "3",
-    question: "What your refund policy?",
+    question: "What is your refund policy?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "We offer full refunds if you cancel at least 24 hours before your scheduled session. No refunds are available for missed or same-day cancellations.",
   },
   {
     id: "4",
-    question: "Do you have corporate plans?",
+    question: "Do you offer packages for multiple sessions?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! You can save by booking multiple mock interviews as a bundle. Contact us to learn more about package deals.",
   },
   {
     id: "5",
-    question: "What happens when I’m out of storage?",
+    question: "Can I reschedule my mock interview?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Of course! You can reschedule your session up to 24 hours before your appointment without any penalty.",
   },
   {
     id: "6",
-    question: "Can I upgrade my plan?",
+    question: "Will I get feedback after my mock interview?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Absolutely! After every session, you'll receive detailed feedback on your strengths, areas for improvement, and tips to boost your interview performance.",
   },
   {
     id: "7",
-    question: "How do I invite my team?",
+    question: "How do I prepare for my mock interview?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Once you book, we'll send you a preparation guide with tips on what to expect and how to make the most of your session.",
   },
   {
     id: "8",
-    question: "Do you offer training for individuals and teams?",
+    question: "Do you offer mock interviews for specific roles?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! We offer sessions tailored to roles like front-end engineering, software development, and product design. Let us know your target role when booking!",
   },
   {
     id: "9",
-    question: "I’m locked out of my account what do I do?",
+    question: "I'm nervous — is that normal?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Totally normal! Mock interviews are a safe place to practice, make mistakes, and build confidence. We're here to support you every step of the way.",
+  },
+  {
+    id: "10",
+    question: "Can I book a live mock interview with a real coach?",
+    answer:
+      "Yes! While our AI is getting even smarter, you can book a 1-on-1 session with a real interview coach to get customized feedback and actionable advice.",
   },
 ];
 
@@ -113,14 +119,22 @@ export const plans = [
   {
     id: "0",
     title: "Core",
-    priceMonthly: 19,
-    priceYearly: 12,
     caption: "Best for solo creators",
+    billingOptions: {
+      monthly: {
+        price: 19,
+        note: "Billed monthly",
+      },
+      yearly: {
+        price: 12,
+        note: "Billed annually ($144/year)",
+      },
+    },
     features: [
-      "100MB Cloud storage",
-      "100+ prompt templates",
-      "5 projects",
-      "24/7 support",
+      "1 live mock interview",
+      "Basic interview feedback",
+      "Email summary with tips",
+      "Access to interview prep resources",
     ],
     icon: "/images/circle.svg",
     logo: "/images/plan-1.png",
@@ -128,14 +142,22 @@ export const plans = [
   {
     id: "1",
     title: "Overdrive",
-    priceMonthly: 79,
-    priceYearly: 59,
     caption: "Most popular plan",
+    billingOptions: {
+      monthly: {
+        price: 79,
+        note: "Billed monthly",
+      },
+      yearly: {
+        price: 59,
+        note: "Billed annually ($708/year)",
+      },
+    },
     features: [
-      "All Starter features",
-      "1TB additional storage",
-      "Unlimited projects",
-      "Analytics",
+      "3 live mock interviews",
+      "Detailed feedback after each session",
+      "Personalized improvement plan",
+      "Priority scheduling",
     ],
     icon: "/images/triangle.svg",
     logo: "/images/plan-2.png",
@@ -143,14 +165,22 @@ export const plans = [
   {
     id: "2",
     title: "Team",
-    priceMonthly: 39,
-    priceYearly: 29,
     caption: "Exclusively for teams",
+    billingOptions: {
+      monthly: {
+        price: 39,
+        note: "Billed monthly",
+      },
+      yearly: {
+        price: 29,
+        note: "Billed annually ($348/year)",
+      },
+    },
     features: [
-      "All Overdrive features",
-      "10TB additional storage",
-      "50% off per member",
-      "Real-time collaboration",
+      "5 live mock interviews",
+      "Progress tracking",
+      "Role-specific interview coaching (e.g. Frontend Engineer, Product Designer)",
+      "Ongoing chat support between sessions",
     ],
     icon: "/images/hexagon.svg",
     logo: "/images/plan-3.png",
